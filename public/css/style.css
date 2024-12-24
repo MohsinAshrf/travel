@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: #86B817;
+    --primary: #86b817;
     --secondary: #FE8800;
     --light: #F5F5F5;
     --dark: #14141F;
@@ -13,7 +13,7 @@
 .fw-semi-bold {
     font-weight: 700 !important;
 }
-
+ 
 .back-to-top {
     position: fixed;
     display: none;
@@ -75,6 +75,7 @@
     font-weight: normal;
     border-radius: 0px;
 }
+
 
 
 /*** Navbar ***/
@@ -172,7 +173,8 @@
 
 /*** Hero Header ***/
 .hero-header {
-    background: linear-gradient(rgba(20, 20, 31, .7), rgba(20, 20, 31, .7)), url(../img/bg-hero.jpg);
+    /* margin-top: 10px; */
+    background: linear-gradient(rgba(32, 32, 49, 0.7),rgba(31, 31, 46, 0.7)), url(../img/hunza-banner.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -294,6 +296,23 @@
     border-radius: 20px;
     border-bottom: 1px solid var(--primary);
 }
+body{
+    position: relative;
+}
+.whatsapp{
+    position: fixed;
+    bottom: 25%;
+    z-index: 4;
+    /* background-color: green; */
+    /* border-radius: 100%; */
+    /* color:rgb(37, 211, 102); */
+    /* font-size: 57px; */
+    /* height:70px; */
+    /* width: 70px; */
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); Optional shadow for better appearance */
+    right: 40px;
+}
+
 
 .team-item .btn:hover {
     background: var(--primary);
@@ -327,7 +346,7 @@
 @media (min-width: 768px) {
     .testimonial-carousel::before,
     .testimonial-carousel::after {
-        width: 200px;
+        width: 100px;
     }
 }
 

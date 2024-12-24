@@ -89,6 +89,13 @@
             }
         }
     });
-    
+    // Pause and resume carousel when a video is played or ends
+$(".testimonial-carousel video").on("play", function () {
+    $(".testimonial-carousel").trigger("stop.owl.autoplay"); // Pause the carousel
+});
+
+$(".testimonial-carousel video").on("ended pause", function () {
+    $(".testimonial-carousel").trigger("play.owl.autoplay"); // Resume the carousel
+});
 })(jQuery);
 
