@@ -8,7 +8,9 @@ use App\Models\Contact;
 use App\Models\Pkg;
 use App\Models\User;
 use Illuminate\Http\Request;
+
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 
 class MainController extends Controller
 {
@@ -26,6 +28,8 @@ class MainController extends Controller
 
     public function login(Request $request)
     {
+        // dd(Hash::make('password'));
+        
         $request->validate([
             'email' => 'required|email',
             'password' => 'required',
