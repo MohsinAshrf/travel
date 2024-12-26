@@ -8,6 +8,10 @@
     </div>
 @endif
 <h3 class="text-center text-success mb-4"> All Users </h3>
+<div class="text-end my-1">
+    <a href="{{route('users.create')}}" class="btn btn-outline-success">Add New</a>
+
+</div>
  <table class="table table-striped table-bordered">
         <thead class="table-dark">
             <tr>
@@ -16,7 +20,6 @@
                 <th>Email</th>
                 <th>Role</th>
                 <th>Profile Image</th>
-                <th>Actions</th>
                 <th>Actions</th>
             </tr>
         </thead>
@@ -35,17 +38,19 @@
                     @endif 
                 </td>
                 <td>
-                    <a href="{{route('users.edit' , $user->id)}}" class="btn btn-primary btn-sm">Edit</a>
+                    <div class="d-flex ">
+                        <a href="{{route('users.edit' , $user->id)}}" class="btn btn-outline-info btn-sm">Edit</a>
+                        <form action="{{ route('users.destroy' , $user->id) }}"
+                            method="post">
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit"
+                                class="ms-1 btn btn-sm btn-outline-danger">Delete</button>
+                        </form>
+                    </div>
                     {{-- <a href="{{route('users.destroy' , $user->id)}}" class="btn btn-danger btn-sm">Delete</a> --}}
                 
                 </td>
-                <td><form action="{{ route('users.destroy' , $user->id) }}"
-                    method="post">
-                    @csrf
-                    @method('DELETE')
-                    <button type="submit"
-                        class="ml-1 btn btn-danger">Delete</button>
-                </form></td>
             </tr>
             @endforeach
         </tbody>

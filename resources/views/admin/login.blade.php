@@ -41,9 +41,15 @@
     <div class="login-container">
         <div class="login-box text-center">
             <!-- Logo -->
-            <img class="rounded-circle" src="{{ asset('img/about.jpg') }}" alt="Logo">
+            <img class="rounded-circle" src="{{ asset('img/a.jpg') }}" alt="Logo">
             <form action="{{ route('login') }}" method="POST">
                 @csrf
+
+                @if(session('error'))
+
+                <div class="text-danger">  * {{ session('error') }}</div>
+                @endif
+
                 <!-- Email -->
                 <div class="mb-3 text-start">
                     <label for="email" class="form-label">Email</label>
@@ -60,10 +66,7 @@
                 <!-- Login Button -->
                 <button type="submit" class="btn btn-login w-100 py-2">LOGIN</button>
                 <div class="mt-3 mb-3 text-start">
-                    @if(session('error'))
-
-                    <div class="text-danger">  * {{ session('error') }}</div>
-                    @endif
+                
                 </div>
             </form>
         </div>

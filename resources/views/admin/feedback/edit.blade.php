@@ -3,7 +3,10 @@
 @section('content')
     <div class="container">
         <h1>Edit Feedback</h1>
-
+        <div class="text-end my-1">
+            <a href="{{route('feedbacks.index')}}" class="btn  btn-sm btn-danger">Back</a>
+        
+        </div>
         <!-- Form to edit the feedback -->
         <form action="{{ route('feedbacks.update', $feedback->id) }}" method="POST" enctype="multipart/form-data">
             @csrf

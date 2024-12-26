@@ -28,7 +28,7 @@ Route::get('/' , [BarController::class, 'index'])->name('index');
 Route::resource('/contacts', ContactController::class);
 
 Route::get('/about', [BarController::class,  'about'])->name('about');
-Route::get('/about-details', [BarController::class,  'showabout'])->name('showabout');
+// Route::get('/about-details', [BarController::class,  'showabout'])->name('showabout');
 Route::get('/services', [BarController::class, 'services'])->name( 'services');
 Route::get('/packages', [BarController::class, 'packages'])->name('packages');
 Route::get('/pakage-details/{id}', [BarController::class, 'packageshow'])->name('more');
@@ -42,14 +42,14 @@ Route::resource('/feedbacks', FeedbackController::class);
 
 Route::get('/login' , [MainController::class, 'showLoginForm'])->name('login');
 Route::post('/login' , [MainController::class, 'login'])->name('checklogin');
-Route::post('/logout' , [MainController::class, 'logout'])->name('logout');
 
 // Admin Pannel Routes 
 Route::middleware(['auth' , 'main'])->group( function(){
-    Route::get('/dashboard', function(){
-        return view('admin/dashboard');
-    })->name('dashboard');
-    
+    // Route::get('/dashboard', function(){
+    //     return view('admin/dashboard');
+    // })->name('dashboard');
+    Route::get('/dashboard',[MainController::class,'dashboard'])->name('dashboard');
+    Route::post('/logout' , [MainController::class, 'logout'])->name('logout');
     Route::resource('book', BookController::class);
 Route::resource('users' , UserController::class);
 Route::resource('pkgs', PkgController::class);

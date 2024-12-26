@@ -3,7 +3,10 @@
 @section('content')
     <div class="container">
         <h1>Add Feedback</h1>
-
+        <div class="text-end my-1">
+            <a href="{{route('feedbacks.index')}}" class="btn btn-warning btn-sm">Go to list</a>
+        
+        </div>
         <form action="{{ route('feedbacks.store') }}" method="POST" enctype="multipart/form-data">
             @csrf
 

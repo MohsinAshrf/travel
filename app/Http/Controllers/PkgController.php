@@ -96,12 +96,13 @@ class PkgController extends Controller
             
             // Delete the old image if needed
             if ($pkg->image) {
-                Storage::delete('public/pkimg/' . $pkg->image);
+                Storage::delete('public/' . $pkg->image);
             }
     
             // Save the new image
-            $imagePath = $request->file('image')->store('public/pkimg');
-            $pkg->image = basename($imagePath); // Save only the filename
+            $imagePath = $request->file('image')->store('pkgimg','public');
+            // $pkg->image = basename($imagePath); // Save only the filename
+            $pkg->image = $imagePath;
         }
     
         // Update other fields
@@ -113,7 +114,7 @@ class PkgController extends Controller
         $pkg->save();
     
     
-         return redirect()->route('pkgs.index')->with('success' , 'Pakage created successfully! ');
+         return redirect()->route('pkgs.index')->with('success' , 'Pakage updated successfully! ');
    
     }
 
@@ -123,7 +124,7 @@ class PkgController extends Controller
     public function destroy(Pkg $pkg)
     {
         if ($pkg->image) {
-            Storage::delete( $pkg->image);
+            Storage::delete('public/'.$pkg->image);
         }
     
         // Delete the user record

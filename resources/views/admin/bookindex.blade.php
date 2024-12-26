@@ -2,6 +2,14 @@
 @section('content')
 
 <h3 class="text-center text-success mb-4"> Bookings Details </h3>
+
+@if(session('success'))
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        {{ session('success') }}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+@endif
+
  <table class="table table-striped table-bordered">
         <thead class="table-dark">
             <tr>
@@ -14,7 +22,7 @@
                 <th>Address</th>
                 <th>Book Date</th>
                 {{-- <th>Actions</th> --}}
-                <th>Actions</th>
+                <th>Action</th>
             </tr>
         </thead>
         <tbody>
@@ -36,7 +44,7 @@
                     @csrf
                     @method('DELETE')
                     <button type="submit"
-                        class="ml-1 btn btn-danger">Delete</button>
+                        class="ml-1 btn btn-outline-danger btn-sm">Delete</button>
                 </form></td>
             </tr>
             @endforeach

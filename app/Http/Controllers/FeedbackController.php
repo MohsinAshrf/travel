@@ -77,7 +77,7 @@ class FeedbackController extends Controller
         if ($request->hasFile('video')) {
             // Delete old video if it exists
             if ($feedback->video) {
-                Storage::delete('public/fvideo' . $feedback->video);
+                Storage::delete('public/' . $feedback->video);
             }
     
             // Store the new video
@@ -102,7 +102,7 @@ class FeedbackController extends Controller
     public function destroy(Feedback $feedback)
     {
         if ($feedback->video) {
-            Storage::delete($feedback->video);
+            Storage::delete('public/'. $feedback->video);
         }
 
         $feedback->delete();

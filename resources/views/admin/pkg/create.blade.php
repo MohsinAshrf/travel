@@ -9,6 +9,10 @@
         <!-- Main Content -->
         <div class="col-md-9 col-lg-10 p-4">
             <h3 class="text-center text-success mb-4">Add Pakage</h3>
+            <div class="text-end my-1">
+                <a href="{{route('pkgs.index')}}" class="btn text-light btn-sm btn-warning">Go to List</a>
+            
+            </div>
             <form action="{{route('pkgs.store')}}" method="POST" enctype="multipart/form-data">
                 @csrf
 

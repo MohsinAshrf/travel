@@ -9,6 +9,10 @@
         <!-- Main Content -->
         <div class="col-md-9 col-lg-10 p-4">
             <h3 class="text-center text-success mb-4">Edit Pakage</h3>
+            <div class="text-end my-1">
+                <a href="{{route('pkgs.index')}}" class="btn  btn-sm btn-danger">Back</a>
+            
+            </div>
             <form action="{{route('pkgs.update',$pkg->id)}}" method="POST" enctype="multipart/form-data">
                 @csrf
                 @method('PUT')
@@ -65,7 +69,6 @@
                         class="form-control mt-2 @error('image') is-invalid @enderror" 
                         id="password" 
                         name="image" 
-                        value="{{old('image')}}"
                         placeholder="Enter your password">
                     @error('image')
                         <div class="invalid-feedback">{{ $message }}</div>

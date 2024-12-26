@@ -1,6 +1,22 @@
 @extends('layout.main')
 @section('main')
-
+<div class="container-fluid bg-primary py-5 mb-5 hero-header">
+    <div class="container py-5">
+        <div class="row justify-content-center py-5">
+            <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
+                <h1 class="display-3 text-white animated slideInDown">Contact Us</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center">
+                        <li class="breadcrumb-item"><a href="{{route('index')}}">Home</a></li>
+                        <li class="breadcrumb-item text-white active" aria-current="page">Contact</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+ <!-- Navbar & Hero End -->
 
     <!-- Contact Start -->
     <div class="mt-5"></div>
@@ -11,7 +27,7 @@
                 <h1 class="mb-5">Contact For Any Query</h1>
             </div>
             <div class="row g-4">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <h5>Get In Touch</h5>
                     <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos</p>
                     <div class="d-flex align-items-center mb-4">
@@ -42,14 +58,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <iframe class="position-relative rounded w-100 h-100"
-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3394.3230350220456!2d73.9770283!3d31.707069699999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3918c376b40c9f91%3A0xef98601efe8f2d3a!2sSanat%20Zar!5e0!3m2!1sen!2s!4v1734026135045!5m2!1sen!2s"   loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-
-                        frameborder="0" style="min-height: 300px; border:0;" allowfullscreen="" aria-hidden="false"
-                        tabindex="0"></iframe>
-                </div>
-                <div class="col-lg-4 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
+                
+                <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <form action="{{ route('contacts.store') }}" method="post">
                         @csrf
                         <div class="row g-3">
@@ -94,6 +104,15 @@ src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3394.3230350220456!2d
                             </div>
                         </div>
                     </form>
+                </div>
+                <div class="col-lg-12 col-md-12 mt-5 wow fadeInUp" data-wow-delay="0.3s">
+                    <iframe class="position-relative rounded w-100 h-100"
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3394.3230350220456!2d73.9770283!3d31.707069699999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3918c376b40c9f91%3A0xef98601efe8f2d3a!2sSanat%20Zar!5e0!3m2!1sen!2s!4v1734026135045!5m2!1sen!2s"  
+ loading="lazy" 
+ referrerpolicy="no-referrer-when-downgrade"
+
+                        frameborder="0" style="min-height: 300px; border:0;" allowfullscreen="" aria-hidden="false"
+                        tabindex="0"></iframe>
                 </div>
             </div>
         </div>

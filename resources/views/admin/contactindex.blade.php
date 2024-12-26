@@ -7,10 +7,11 @@
     <h1 class="text-center">Contact List</h1>
 
     @if(session('success'))
-        <div class="alert alert-success">
-            {{ session('success') }}
-        </div>
-    @endif
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        {{ session('success') }}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+@endif
 
     <table class="table table-striped table-bordered">
         <thead>
@@ -33,12 +34,12 @@
                     <td>{{ $contact->message }}</td>
                     <td>
                         <!-- Example action buttons -->
-                        <a href="#" class="btn btn-info btn-sm">View</a>
-                        <a href="#" class="btn btn-warning btn-sm">Edit</a>
-                        <form action="#" method="post" style="display: inline;">
+                        {{-- <a href="#" class="btn btn-info btn-sm">View</a> --}}
+                        {{-- <a href="#" class="btn btn-warning btn-sm">Edit</a> --}}
+                        <form action="{{route('contacts.destroy',$contact)}}" method="post" style="display: inline;">
                             @csrf
                             @method('DELETE')
-                            <button class="btn btn-danger btn-sm" type="submit">Delete</button>
+                            <button class="btn btn-outline-danger btn-sm" type="submit">Delete</button>
                         </form>
                     </td>
                 </tr>

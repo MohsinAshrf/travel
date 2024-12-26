@@ -17,16 +17,15 @@
         <!-- Heading with custom color -->
         <h1 style="color: #86b817;">All Feedback</h1>
         <div class="d-flex justify-content-end">
-            <a href="{{ route('feedbacks.create') }}" class="btn btn-primary mb-3">Add Feedback</a>
+            <a href="{{ route('feedbacks.create') }}" class="btn btn-outline-success mb-3">Add Feedback</a>
         </div>
 
       <div class=" table-responsive">
         <table class="table " >
-            <thead class=" bg-primary text-white"  >
+            <thead class=" bg-dark text-white"  >
                 <tr>
                     <th>Comment</th>
                     <th>Video</th>
-                    <th>Actions</th>
                     <th>Actions</th>
                 </tr>
             </thead>
@@ -44,15 +43,15 @@
                             @endif
                         </td>
                         <td class="align-middle">
-                            <a href="{{ route('feedbacks.edit', $feedback->id) }}" class="btn btn-warning">Edit</a>
-                        </td>
-                            <td>
+                            <div class="d-flex">
+                                <a href="{{ route('feedbacks.edit', $feedback->id) }}" class="btn btn-outline-info btn-sm">Edit</a>
                                 <form action="{{ route('feedbacks.destroy', $feedback->id) }}" method="POST" style="display:inline;">
                                     @csrf
                                     @method('DELETE')
-                                    <button type="submit" class="btn btn-danger">Delete</button>
+                                    <button type="submit" class="ms-1 btn btn-sm btn-outline-danger">Delete</button>
                                 </form>
-                            </td>
+                            </div>
+                        </td>
                     </tr>
                 @endforeach
             </tbody>

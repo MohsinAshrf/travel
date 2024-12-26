@@ -2,11 +2,15 @@
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
+            <div class="row g-3">
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-white mb-3">PeaksnSlopeGallery</h4>
+                    <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt rerum molestiae tempore, officia ipsam tenetur!</p>
+                </div>
+                <div class="col-lg-4 col-md-6">
                     <h4 class="text-white mb-3">Company</h4>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="{{route('about')}}">About Us</a>
+                    <a class="btn btn-link" href="{{route('contact')}}">Contact Us</a>
                     <a class="btn btn-link" href="">Privacy Policy</a>
                     <a class="btn btn-link" href="">Terms & Condition</a>
                     <a class="btn btn-link" href="">FAQs & Help</a>
@@ -22,21 +26,27 @@
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-5 col-md-6">
+                {{-- <div class="col-lg-4 col-md-6">
                     <h4 class="text-white mb-3">Gallery</h4>
                     <div class="row g-2 pt-2">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3394.3230350220456!2d73.9770283!3d31.707069699999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3918c376b40c9f91%3A0xef98601efe8f2d3a!2sSanat%20Zar!5e0!3m2!1sen!2s!4v1734026135045!5m2!1sen!2s" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                         {{-- <img class="img-fluid bg-light p-1" src="img/package-1.jpg" alt=""> --}}
+                        <iframe
+                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3394.3230350220456!2d73.9770283!3d31.707069699999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3918c376b40c9f91%3A0xef98601efe8f2d3a!2sSanat%20Zar!5e0!3m2!1sen!2s!4v1734026135045!5m2!1sen!2s" 
+                         height="300"
+                         style="border:0;"
+                         allowfullscreen=""
+                         loading="lazy"
+                         referrerpolicy="no-referrer-when-downgrade"></iframe>
+                         <!-- <img class="img-fluid bg-light p-1" src="img/package-1.jpg" alt=""> -->
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
               
             </div>
         </div>
-        <div class="container-fluid  bg-dark">
-            <div class=" container-fluid copyright  border-top  w-50">
+        <div class="container-fluid border-top  bg-dark">
+            <div class=" container-fluid copyright    w-50">
                 <div class="container">
-                    <div class="col-lg-12 text-center my-5  ">
+                    <div class="col-lg-12 text-center py-4  ">
                         &copy; <a class=" text-white" href="#">PeaksnSlopeGallery</a>, All Right Reserved.
 
                         <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->

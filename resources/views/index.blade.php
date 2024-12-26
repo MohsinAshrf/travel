@@ -11,7 +11,21 @@
     </div>
 @endif
 
-    <!-- Navbar & Hero Start -->
+<div class="container-fluid bg-primary py-5 mb-5 hero-header">
+    <div class="container py-5">
+        <div class="row justify-content-center py-5">
+            <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
+                <h1 class="display-3 text-white mb-3 animated slideInDown">Discover the World Like Never Before!</h1>
+                <p class="fs-4 text-white mb-4 animated slideInDown">Pack your bags and let’s chase sunsets, climb mountains, and wander streets you’ve never seen before. Your next story begins here.</p>
+                {{-- <div class="position-relative w-75 mx-auto animated slideInDown">
+                    <input class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Eg: Thailand">
+                    <button type="button" class="btn btn-primary rounded-pill py-2 px-4 position-absolute top-0 end-0 me-2" style="margin-top: 7px;">Search</button>
+                </div> --}}
+            </div>
+        </div>
+    </div>
+</div>
+</div>
     
     <!-- Navbar & Hero End -->
 
@@ -35,7 +49,7 @@
                    </p>
                    {{-- <a class="btn btn-primary py-2 px-2 mt-1" href="{{ route('showabout') }}">Book Now</a> --}}
 
-                   <a href="{{ route('showabout') }}" class="btn btn-sm btn-primary px-3 border-end" >Read More</a>
+                   <a href="{{ route('about') }}" class="btn btn-sm btn-primary px-3 border-end" >Read More</a>
 
                 </div>
             </div>
@@ -148,14 +162,14 @@
                         </div>
                         <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
                             <a class="position-relative d-block overflow-hidden" href="">
-                                <img class="img-fluid" src="img/h.jpg" alt="">
+                                <img class="img-fluid" style="height: 210px" src="img/h.jpg" alt="">
                                 <div class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">25% OFF</div>
                                 <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">Hunza</div>
                             </a>
                         </div>
                         <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
                             <a class="position-relative d-block overflow-hidden" href="">
-                                <img class="img-fluid "  src="img/kaghan.avif" alt="">
+                                <img class="img-fluid " style="height: 210px"  src="img/kaghan.avif" alt="">
                                 <div class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">35% OFF</div>
                                 <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">Kaghan Valley</div>
                             </a>
@@ -268,8 +282,8 @@
                             <img class="img-fluid" src="{{ asset('storage/'.$item->image) }}" alt="" style="width:350px;height:232px">
                         </div>
                         <div class="d-flex border-bottom">
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>{{ $item->location }}Skardu</small>
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i> {{ $item->day }}6 Days</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>{{ Str::upper($item->location) }}</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i> {{ $item->day }} days</small>
                             {{-- <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>2 Person</small> --}}
                         </div>
                         <div class="text-center p-4">
@@ -281,7 +295,7 @@
                                 <small class="fa fa-star text-primary"></small>
                                 <small class="fa fa-star text-primary"></small>
                             </div>
-                            <p>{{ $item->content }}</p>
+                            <p>{{ Str::limit($item->content, 25, '...') }}</p>
                             <div class="d-flex justify-content-center mb-2">
                                 <a href="{{ route('more',$item->id) }}" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
                                 <a href="{{ route('booked' , $item->id )}}" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Book Now</a>
@@ -291,7 +305,7 @@
                 </div>
              
                 @endforeach
-                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                 {{-- <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="package-item">
                         <div class="overflow-hidden">
                             <img class="img-fluid" src="img/package-3.jpg" alt="" >
@@ -315,16 +329,17 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
         </div>
         </div>
     </div>
+</div> 
     <!-- Package End -->
 
 
     <!-- Booking Start -->
-    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container">
+    <div class="container-fluid p-0 py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container-fluid p-0">
             <div class="booking p-5">
                 <div class="row g-5 align-items-center">
                     <div class="col-md-6 text-white">

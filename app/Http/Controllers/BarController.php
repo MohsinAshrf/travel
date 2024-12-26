@@ -15,7 +15,7 @@ class BarController extends Controller
       public function index()
       {
         
-        $pkg = Pkg::orderBy('id', 'desc')->limit(9)->get();        
+        $pkg = Pkg::orderBy('day', 'asc')->limit(9)->get();        
         $pkg->transform( function($pkgs){
             $pkgs->content = Str::words($pkgs->content, 26, '...');
             return  $pkgs;
@@ -40,9 +40,9 @@ class BarController extends Controller
       {
           return view('about'); 
       }
-      public function showabout(){
-        return view('showabout');
-      }
+      // public function showabout(){
+      //   return view('showabout');
+      // }
 
 
       // Services show
@@ -56,7 +56,7 @@ class BarController extends Controller
       // view pakages show
       public function packages()
       {
-        $pkg = Pkg::OrderBy('id' , 'desc')->get();
+        $pkg = Pkg::OrderBy('day' , 'asc')->get();
 
           return view('package',compact('pkg'));  
       }

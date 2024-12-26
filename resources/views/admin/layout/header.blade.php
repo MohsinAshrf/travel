@@ -78,13 +78,27 @@
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand d-flex align-items-center" href="#">
-                <img  src="{{ asset('img/img.png') }}" alt="Logo" style="height: 70px; width:70px" class="rounded-circle">
+                <img  src="{{ asset('img/img.png') }}" alt="Logo" style="height: 50px; width:50px" class="rounded-circle">
             
             </a>
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item d-flex align-items-center">
-                    <img src="{{ asset('images/profile.jpg') }}" alt="Profile" class="profile-img me-2">
-                    <span class="text-white">Admin</span>
+                    {{-- <img src="{{ asset('img/profile.jpg') }}" alt="Profile" class="profile-img me-2">
+                    <span class="text-white">Admin</span> --}}
+                    
+                    <div class="dropstart">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                          {{auth()->user()->name}}
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" href="{{route('users.edit',auth()->user()->id)}}">Profile</a></li>
+                          <li>
+                            <form action="{{route('logout')}}"  method="post">
+                                @csrf
+                                <input class="dropdown-item" value="Logout"  type="submit" />
+                            </form>
+                        </li>
+                        </ul>
                 </li>
             </ul>
         </div>

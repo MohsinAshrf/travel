@@ -4,7 +4,10 @@
 
 
 <h3 class="text-center text-success mb-4">Edit User</h3>
+<div class="text-end my-1">
+    <a href="{{route('users.index')}}" class="btn btn-danger btn-sm">Back</a>
 
+</div>
 <form action="{{ route('users.update', $user->id) }}" method="POST" enctype="multipart/form-data">
     @csrf
     @method('PUT')
