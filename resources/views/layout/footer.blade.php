@@ -47,7 +47,7 @@
             <div class=" container-fluid copyright    w-50">
                 <div class="container">
                     <div class="col-lg-12 text-center py-4  ">
-                        &copy; <a class=" text-white" href="#">PeaksnSlopeGallery</a>, All Right Reserved.
+                        &copy; {{date('Y')}} <a class=" text-white" href="{{route('index')}}">PeaksnSlopeGallery</a>, All Right Reserved.
 
                         <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
                       
@@ -72,12 +72,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="{{url('lib/wow/wow.min.js')}}"></script>
     <script src="{{url('lib/easing/easing.min.js')}}"></script>
-    <script src="{{url('lib/waypoints/waypoints.min.js')}}"></script>
+    {{-- <script src="{{url('lib/waypoints/waypoints.min.js')}}"></script> --}}
     <script src="{{url('lib/owlcarousel/owl.carousel.min.js')}}"></script>
     <script src="{{url('lib/tempusdominus/js/moment.min.js')}}"></script>
-    <script src="{{url('lib/tempusdominus/js/moment-timezone.min.js')}}"></script>
+    {{-- <script src="{{url('lib/tempusdominus/js/moment-timezone.min.js')}}"></script> --}}
     <script src="{{url('lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js')}}"></script>
-
     <!-- Template Javascript -->
     <script src="{{url('js/main.js')}}"></script>
 </body>

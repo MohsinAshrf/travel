@@ -16,8 +16,8 @@ class mainmiddleware
      */
     public function handle(Request $request, Closure $next): Response
     {
-        if (Auth::check() && in_array(Auth::user()->role, [1, 2])) {
-
+        if (Auth::check() && Auth::user()->role == 1) {
+            // only admin allow to access dashboard 
 
             return $next($request);
         } else {

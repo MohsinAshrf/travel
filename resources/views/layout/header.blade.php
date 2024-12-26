@@ -11,7 +11,7 @@
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="img/img.png" rel="icon" style="border-radius: 100%; ">
+    <link href="{{asset('img/img.png')}}" rel="icon" style="border-radius: 100%; ">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,7 +43,7 @@
     </div>
     <!-- Spinner End -->
     <div class="whatsapp">
-        <a class="" target="blank" href=" https://wa.me/923008840170"><img  style="height:55px;width:55px;border-radius:25%" src="img/whatsapp.webp" alt="imgae"></a>
+        <a class="" target="blank" href=" https://wa.me/923008840170"><img  style="height:55px;width:55px;border-radius:25%" src="{{asset('img/whatsapp.webp')}}" alt="imgae"></a>
 
     </div>
     <div class="container-fluid bg-dark px-5 d-none d-lg-block">
@@ -71,7 +71,7 @@
         <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
             <a href="{{ route('index') }}" class="navbar-brand  p-0 d-flex align-items-center">
                 <div>
-                    <img src="img/img.png" alt="Logo"class="rounded-circle" > 
+                    <img src="{{asset('img/img.png')}}" alt="Logo"class="rounded-circle" > 
 
                 </div>
                 <h4 class="text-primary m-0 ms-2">PeaksnSlopeGallery</h4>

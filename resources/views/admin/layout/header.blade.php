@@ -16,7 +16,7 @@
             font-family: 'Poppins', sans-serif;
         }
         .navbar {
-            background-color: lightgreen;
+            background-color: black;
             color: white;
         }
         .navbar-brand {
@@ -31,7 +31,8 @@
             border: 2px solid #ffffff;
         }
         .sidebar {
-            background-color: #f4f6f8;
+            /* background-color: #f4f6f8; */
+            background-color: rgb(105, 102, 255);
             padding: 20px;
             box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
             min-height: 100vh;
@@ -46,12 +47,12 @@
             border-radius: 5px;
         }
         .sidebar a:hover {
-            background-color: #86b817;
-            color: white;
+            background-color: #fff;
+            color: rgb(105, 102, 255);
         }
         .sidebar a.active {
-            background-color: #86b817;
-            color: white;
+            background-color: #fff;
+            color: rgb(105, 102, 255);
         }
         .sidebar .icon {
             margin-right: 10px;
@@ -71,15 +72,29 @@
         .sidebar .dropdown-icon {
             margin-left: auto;
         }
+        .heading{
+            color: #6966ff;
+        }
+        #openSidebar{
+                display: none;
+            }
+        @media screen and (max-width:768px){
+            #openSidebar{
+                display: block;
+            }
+            #selfSidebar{
+                display: none;
+            }
+        }
     </style>
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container-fluid">
-            <a class="navbar-brand d-flex align-items-center" href="#">
-                <img  src="{{ asset('img/img.png') }}" alt="Logo" style="height: 50px; width:50px" class="rounded-circle">
-            
+            <a class="navbar-brand d-flex align-items-center" href="{{route('index')}}">
+                {{-- <img  src="{{ asset('img/img.png') }}" alt="Logo" style="height: 50px; width:50px" class="rounded-circle"> --}}
+            <p class="text-light fs-4 mb-0">PeaksnSlopeGallery</p>
             </a>
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item d-flex align-items-center">
@@ -88,17 +103,19 @@
                     
                     <div class="dropstart">
                         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                          {{auth()->user()->name}}
+                          {{auth()->user()->name}} <i class="fas fa-user-alt"></i>
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                           <li><a class="dropdown-item" href="{{route('users.edit',auth()->user()->id)}}">Profile</a></li>
                           <li>
                             <form action="{{route('logout')}}"  method="post">
                                 @csrf
-                                <input class="dropdown-item" value="Logout"  type="submit" />
+                                <input class="dropdown-item" value="Logout"   type="submit" />
                             </form>
                         </li>
                         </ul>
+                    </div>
+                    <button class="btn btn-light ms-2" id="openSidebar"><i class="fas fa-bars"></i></button>
                 </li>
             </ul>
         </div>

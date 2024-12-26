@@ -34,7 +34,7 @@
                          <img class="img-fluid" src="{{ asset('storage/'.$item->image) }}" alt="" style="width:350px;height:232px">
                      </div>
                      <div class="d-flex border-bottom">
-                         <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>{{ Str::upper($item->location) }}</small>
+                         <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>{{ Str::title($item->location) }}</small>
                          <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i> {{ $item->day }} days</small>
                          {{-- <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>2 Person</small> --}}
                      </div>

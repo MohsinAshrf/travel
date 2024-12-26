@@ -3,13 +3,21 @@
 namespace App\Http\Controllers;
 // namespace App\Http\Controllers\Auth;
 
+use App\Models\Book;
+use App\Models\Contact;
+use App\Models\Pkg;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 class MainController extends Controller
 {
     public function dashboard(){
-        return view('admin.dashboard');
+        $totalUsers = User::count();
+        $totalContact = Contact::count();
+        $totalBook = Book::count();
+        $totalPkg = Pkg::count();
+        return view('admin.dashboard',compact('totalUsers','totalContact','totalBook','totalPkg'));
     }
     public function showLoginForm()
     {

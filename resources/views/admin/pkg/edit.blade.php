@@ -2,17 +2,37 @@
 
 @section('content')
 
-<div class="container-fluid">
+<div class="container">
     <div class="row">
-        <!-- Sidebar -->
+        <div class="col-md-6">
+            <p class="fs-4 heading mb-0">Pakage</p>
+        </div>
+        <div class="col-md-6 d-flex justify-content-end ">
+            <nav aria-label="breadcrumb" >
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item "><a href="{{route('dashboard')}}" class="text-info">Home</a></li>
+                  <li class="breadcrumb-item "><a href="{{route('pkgs.index')}}" class="text-info">Pakage</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Pakage Create</li>
+                </ol>
+              </nav>
+        </div>
+    </div>
+    <div class="card  mt-2 border-0 shadow-sm">
+        <div class="card-header">
+            <div class="row">
+                <div class="col-md-6">
 
-        <!-- Main Content -->
-        <div class="col-md-9 col-lg-10 p-4">
-            <h3 class="text-center text-success mb-4">Edit Pakage</h3>
-            <div class="text-end my-1">
-                <a href="{{route('pkgs.index')}}" class="btn  btn-sm btn-danger">Back</a>
-            
+                    <p class="mb-0 p-0 fs-5">Package Edit</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="text-end my-1">
+                        <a href="{{route('pkgs.index')}}" class="btn btn-sm btn-danger">Back</a>
+                    
+                    </div>
+                </div>
             </div>
+        </div>
+        <div class="card-body">
             <form action="{{route('pkgs.update',$pkg->id)}}" method="POST" enctype="multipart/form-data">
                 @csrf
                 @method('PUT')
@@ -100,6 +120,11 @@
         </div>
     </div>
 </div>
+
+          
+           
+   
+  
 
 
 @endsection

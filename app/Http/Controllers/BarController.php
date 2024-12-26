@@ -32,7 +32,7 @@ class BarController extends Controller
       public function packageshow($id){
         $pkg = Pkg::findOrFail($id);
         
-        return view('admin.pkg.show',compact('pkg'));
+        return view('package-show',compact('pkg'));
       }
 
       // about section
