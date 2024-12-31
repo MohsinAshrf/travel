@@ -24,11 +24,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/' , [BarController::class, 'index'])->name('index');
+Route::get('/' , [ BarController::class, 'index'])->name('index');
 Route::resource('/contacts', ContactController::class);
 
 Route::get('/about', [BarController::class,  'about'])->name('about');
-// Route::get('/about-details', [BarController::class,  'showabout'])->name('showabout');
+Route::get('/about-details', [BarController::class,  'showabout'])->name('showabout');
 Route::get('/services', [BarController::class, 'services'])->name( 'services');
 Route::get('/packages', [BarController::class, 'packages'])->name('packages');
 Route::get('/pakage-details/{id}', [BarController::class, 'packageshow'])->name('more');

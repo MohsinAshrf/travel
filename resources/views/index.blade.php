@@ -40,17 +40,20 @@
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <h6 class="section-title bg-white text-start text-primary pe-3">About Us</h6>
-                    <h1 class="mb-4">Welcome to <span class="text-primary">Peaks n Slope Gallery</span></h1>
-                    <p class="mb-4">We believe travel isn’t just about visiting places; it’s about creating moments that linger long after the trip is over.</p>
-                    <p class="mb-4">We’re more than just a booking platform—we’re your adventure partner, your local guide, and your storyteller. From breathtaking landscapes to hidden cultural gems, we’re here to make your journey seamless, meaningful, and unforgettable.</p>
-                   <p class="mb-4">So, whether you’re planning a solo escape, a family adventure, or a romantic getaway, we’re here to help you every step of the way. Let’s turn your travel dreams into reality, one destination at a time...
-
-                   </p>
-                   {{-- <a class="btn btn-primary py-2 px-2 mt-1" href="{{ route('showabout') }}">Book Now</a> --}}
-
-                   <a href="{{ route('about') }}" class="btn btn-sm btn-primary px-3 border-end" >Read More</a>
-
+                    <h2>Welcome to <span class="text-primary">Peaks n Slope Gallery</span></h2>
+                    <p style="font-weight: bold; font-size: 18px;">Founded by <strong>Mariam</strong> </p>
+                    
+                                        <p class="mb-4">I have started this tour company by being inspired by my father. I was an ordinary Pakistani citizen but after my father's death this company has been brought into existence  by me, <strong  style="font-size: 17px">Mariam</strong>.</p>
+                                        <p class="mb-4"> My goal is to keep their passion and dedication alive and promote the entertainment of northen  regions for common citizens of Punjab like us. My goal is to provide a peaceful safe term for families and girls.</p>
+                                        <p><strong style="font-size: 17px">Mariam</strong> has dedicated their life to promoting tourism and creating safe travel opportunities for families and individuals. Inspired by personal experiences and family values, they aim to provide a memorable journey for all.</p>
+                                        
+                    
+                                       </p>
+                                       {{-- <a class="btn btn-primary py-2 px-2 mt-1" href="{{ route('showabout') }}">Book Now</a> --}}
+                                       <a href="{{ route('packages') }}" class="btn btn-sm btn-primary px-3 border-end" >Explore Our Packages</a>
+                    
+                                       {{-- <a href="{{ route('showabout') }}" class="btn btn-sm btn-primary px-3 border-end" >Read More</a> --}}
+                    
                 </div>
             </div>
         </div>
@@ -492,7 +495,7 @@
         <div class="container">
             <div class="text-center">
                 <h6 class="section-title bg-white text-center text-primary px-3">Testimonial</h6>
-                <h1 class="mb-5">Our Clients Say!!!</h1>
+                <h1 class="mb-5">Our Clients Say!!! </h1>
             </div>
             <div class="owl-carousel testimonial-carousel position-relative">
                @foreach ($feedbacks as $feedback )

@@ -8,8 +8,8 @@
                 <h1 class="display-3 text-white animated slideInDown">Package Details</h1>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb justify-content-center">
-                        <li class="breadcrumb-item"><a href="{{route('index')}}">Home</a></li>
-                        <li class="breadcrumb-item"><a href="{{route('packages')}}">Package</a></li>
+                        <li class="breadcrumb-item"><a class="text-primary" href="{{route('index')}}">Home</a></li>
+                        <li class="breadcrumb-item"><a class="text-primary" href="{{route('packages')}}">Package</a></li>
                         <li class="breadcrumb-item text-white active" aria-current="page">Package Details</li>
                     </ol>
                 </nav>

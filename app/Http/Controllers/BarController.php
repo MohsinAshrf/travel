@@ -40,9 +40,9 @@ class BarController extends Controller
       {
           return view('about'); 
       }
-      // public function showabout(){
-      //   return view('showabout');
-      // }
+      public function showabout(){
+        return view('showabout');
+      }
 
 
       // Services show

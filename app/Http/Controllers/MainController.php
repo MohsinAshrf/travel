@@ -28,7 +28,7 @@ class MainController extends Controller
 
     public function login(Request $request)
     {
-        // dd(Hash::make('password'));
+        // dd('password');
         
         $request->validate([
             'email' => 'required|email',

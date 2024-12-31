@@ -23,12 +23,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
-    <link href="{{url('lib/animate/animate.min.css')}}" rel="stylesheet">
-    <link href="{{url('lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
-    <link href="{{url('lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css')}}" rel="stylesheet" />
+    <link href="{{asset('lib/animate/animate.min.css')}}" rel="stylesheet">
+    <link href="{{asset('lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
+    <link href="{{asset('lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css')}}" rel="stylesheet" />
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="{{url('../css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">
 
     <!-- Template Stylesheet -->
     <link href="{{asset('css/style.css')}}" rel="stylesheet">
@@ -42,15 +42,18 @@
         </div>
     </div>
     <!-- Spinner End -->
-    <div class="whatsapp">
-        <a class="" target="blank" href=" https://wa.me/923008840170"><img  style="height:55px;width:55px;border-radius:25%" src="{{asset('img/whatsapp.webp')}}" alt="imgae"></a>
+       <!-- whatsapp start -->
+       <div class="whatsapp">
+        <a class="" target="blank" href=" https://wa.me/923008840170"><img  style="height:50px;width:50p
+        x;border-radius:25%" src="{{asset('img/whatsapp.webp')}}" alt="imgae"></a>
 
     </div>
+    <!-- whatsapp end  -->
     <div class="container-fluid bg-dark px-5 d-none d-lg-block">
         <div class="row gx-0">
             <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
                 <div class="d-inline-flex align-items-center" style="height: 45px;">
-                    <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>Khalid Road , Near Gol Masjid , Sheikhupura</small>
+                    <small  class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>Khalid Road , Near Gol Masjid , Sheikhupura</small>
                     <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>+923344512693</small>
                     <small class="text-light"><i class="fa fa-envelope-open me-2"></i>peaksnslopegallery@example.com</small>
                 </div>
@@ -71,7 +74,7 @@
         <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
             <a href="{{ route('index') }}" class="navbar-brand  p-0 d-flex align-items-center">
                 <div>
-                    <img src="{{asset('img/img.png')}}" alt="Logo"class="rounded-circle" > 
+                    <img src="{{asset('img/pns.jpg')}}" alt="Logo"class="rounded-circle" > 
 
                 </div>
                 <h4 class="text-primary m-0 ms-2">PeaksnSlopeGallery</h4>

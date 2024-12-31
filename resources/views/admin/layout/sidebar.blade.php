@@ -9,7 +9,7 @@
                             Dashboard
                         </a>
                     </li>
-                    <li class="nav-item mt-3">
+                    {{-- <li class="nav-item mt-3">
                         <a href="#destinationsMenu" class=" d-flex align-items-center" data-bs-toggle="collapse">
                             <i class="fas fa-map-marker-alt icon"></i>
                             Destinations
@@ -20,7 +20,7 @@
                             <li><a href="#" >Asia</a></li>
                             <li><a href="#" >America</a></li>
                         </ul>
-                    </li>
+                    </li> --}}
                     <li class="nav-item">
                         <a href="#usersMenu" class=" d-flex align-items-center" data-bs-toggle="collapse">
                             <i class="fas fa-users icon"></i>
