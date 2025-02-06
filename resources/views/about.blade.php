@@ -26,18 +26,18 @@
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
                     <div class="position-relative h-100">
-                        <img class="img-fluid position-absolute w-100 h-100" src="img/b.jpg" alt="" style="object-fit: cover;">
+                        <img class="img-fluid position-absolute w-100 h-100" src="{{url('assets/img/b.jpg')}}" alt="" style="object-fit: cover;">
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
                     {{-- <h6 class="section-title bg-white text-start text-primary pe-3">About Us</h6>
                     <h1 class="mb-4">Welcome to <span class="text-primary">Peaks n Slope Gallery</span></h1> --}}
                     <h2>Welcome to <span class="text-primary">Peaks n Slope Gallery</span></h2>
-<p style="font-weight: bold; font-size: 19px;">Founded by <strong>Mariam</strong> </p>
+<p style="font-weight: bold; font-size: 19px;">Founded by <strong>Maryam Arif</strong> </p>
 
-                    <p class="mb-4">I have started this tour company by being inspired by my father. I was an ordinary Pakistani citizen but after my father's death this company has been brought into existence  by me, <strong  style="font-size: 17px">Mariam</strong>.</p>
+                    <p class="mb-4">I have started this tour company by being inspired by my father. I was an ordinary Pakistani citizen but after my father's death this company has been brought into existence  by me, <strong  style="font-size: 17px">Maryam Arif</strong>.</p>
                     <p class="mb-4"> My goal is to keep their passion and dedication alive and promote the entertainment of northen  regions for common citizens of Punjab like us. My goal is to provide a peaceful safe term for families and girls.</p>
-                    <p><strong style="font-size: 17px">Mariam</strong> has dedicated their life to promoting tourism and creating safe travel opportunities for families and individuals. Inspired by personal experiences and family values, they aim to provide a memorable journey for all.</p>
+                    <p><strong style="font-size: 17px">Maryam Arif</strong> has dedicated their life to promoting tourism and creating safe travel opportunities for families and individuals. Inspired by personal experiences and family values, they aim to provide a memorable journey for all.</p>
                     
 
                    </p>

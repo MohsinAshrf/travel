@@ -62,7 +62,7 @@
                         <tr>
                             <td><strong>{{ $pkg->id}}</strong></td>
                             <td> 
-                                <img src="{{ asset('storage/' . $pkg->image) }}" alt="Profile Image" class="img-thumbnail" style="width: 70px; height: 70px;">
+                                <img src="{{ $pkg->image}}" alt="Profile Image" class="img-thumbnail" style="width: 70px; height: 70px;">
                               
                             </td>
                             <td>{{ $pkg->location}}</td>

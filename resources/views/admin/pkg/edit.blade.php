@@ -70,7 +70,7 @@
                 <div class="mb-3">
                     <label for="password" class="form-label">Image</label>
                     @if ($pkg->image)
-                   <img src="{{ asset('storage/'.$pkg->image) }}" alt="profile image" style="width: 60px;height:60px">
+                   <img src="{{$pkg->image }}" alt="profile image" style="width: 60px;height:60px">
                     {{-- <p>{{ basename($pkg->image) }}</p> <!-- Display only the image filename --> --}}
                 @else
                     

@@ -36,16 +36,16 @@
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
                     <div class="position-relative h-100">
-                        <img class="img-fluid position-absolute w-100 h-100" src="img/b.jpg" alt="" style="object-fit: cover;">
+                        <img class="img-fluid position-absolute w-100 h-100" src="{{url('assets/img/b.jpg')}}" alt="" style="object-fit: cover;">
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
                     <h2>Welcome to <span class="text-primary">Peaks n Slope Gallery</span></h2>
-                    <p style="font-weight: bold; font-size: 18px;">Founded by <strong>Mariam</strong> </p>
+                    <p style="font-weight: bold; font-size: 18px;">Founded by <strong>Maryam Arif</strong> </p>
                     
-                                        <p class="mb-4">I have started this tour company by being inspired by my father. I was an ordinary Pakistani citizen but after my father's death this company has been brought into existence  by me, <strong  style="font-size: 17px">Mariam</strong>.</p>
+                                        <p class="mb-4">I have started this tour company by being inspired by my father. I was an ordinary Pakistani citizen but after my father's death this company has been brought into existence  by me, <strong  style="font-size: 17px">Maryam Arif</strong>.</p>
                                         <p class="mb-4"> My goal is to keep their passion and dedication alive and promote the entertainment of northen  regions for common citizens of Punjab like us. My goal is to provide a peaceful safe term for families and girls.</p>
-                                        <p><strong style="font-size: 17px">Mariam</strong> has dedicated their life to promoting tourism and creating safe travel opportunities for families and individuals. Inspired by personal experiences and family values, they aim to provide a memorable journey for all.</p>
+                                        <p><strong style="font-size: 17px">Maryam Arif</strong> has dedicated their life to promoting tourism and creating safe travel opportunities for families and individuals. Inspired by personal experiences and family values, they aim to provide a memorable journey for all.</p>
                                         
                     
                                        </p>
@@ -158,21 +158,21 @@
                     <div class="row g-3">
                         <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
                             <a class="position-relative d-block overflow-hidden" href="">
-                                <img class="img-fluid" src="img/kagana.jpg" alt="">
+                                <img class="img-fluid" src="{{url('assets/img/kagana.jpg')}}" alt="">
                                 <div class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">30% OFF</div>
                                 <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">Azad Kashmir</div>
                             </a>
                         </div>
                         <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
                             <a class="position-relative d-block overflow-hidden" href="">
-                                <img class="img-fluid" style="height: 210px" src="img/h.jpg" alt="">
+                                <img class="img-fluid" style="height: 210px" src="{{url('assets/img/h.jpg')}}" alt="">
                                 <div class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">25% OFF</div>
                                 <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">Hunza</div>
                             </a>
                         </div>
                         <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
                             <a class="position-relative d-block overflow-hidden" href="">
-                                <img class="img-fluid " style="height: 210px"  src="img/kaghan.avif" alt="">
+                                <img class="img-fluid " style="height: 210px"  src="{{url('assets/img/kaghan.avif')}}" alt="">
                                 <div class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">35% OFF</div>
                                 <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">Kaghan Valley</div>
                             </a>
@@ -181,7 +181,7 @@
                 </div>
                 <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px;">
                     <a class="position-relative d-block h-100 overflow-hidden" href="">
-                        <img class="img-fluid position-absolute w-100 h-100" src="img/photo-1679951124125-50cc4029d727.avif" alt="" style="object-fit: cover;">
+                        <img class="img-fluid position-absolute w-100 h-100" src="{{url('assets/img/photo-1679951124125-50cc4029d727.avif')}}" alt="" style="object-fit: cover;">
                         <div class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">20% OFF</div>
                         <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">Skardu</div>
                     </a>
@@ -203,7 +203,7 @@
                 {{-- <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="package-item">
                         <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/package-1.jpg" alt="">
+                            <img class="img-fluid" src="{{url('assets/img/package-1.jpg')}}" alt="">
                         </div>
                         <div class="d-flex border-bottom">
                             <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Naran Kaghan</small>
@@ -228,7 +228,7 @@
                 {{-- <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="package-item">
                         <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/package-2.jpg" alt="">
+                            <img class="img-fluid" src="{{url('assets/img/package-2.jpg')}}" alt="">
                         </div>
                         <div class="d-flex border-bottom">
                             <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Swat Kalam</small>
@@ -255,7 +255,7 @@
                 {{-- <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="package-item">
                         <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/package-3.jpg" alt="">
+                            <img class="img-fluid" src="{{url('assets/img/package-3.jpg')}}" alt="">
                         </div>
                         <div class="d-flex border-bottom">
                             <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Azad Kashmir</small>
@@ -282,7 +282,7 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="package-item">
                         <div class="overflow-hidden">
-                            <img class="img-fluid" src="{{ asset('storage/'.$item->image) }}" alt="" style="width:350px;height:232px">
+                            <img class="img-fluid" src="{{ $item->image }}" alt="" style="width:350px;height:232px">
                         </div>
                         <div class="d-flex border-bottom">
                             <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>{{ Str::title($item->location) }}</small>
@@ -311,7 +311,7 @@
                  {{-- <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="package-item">
                         <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/package-3.jpg" alt="" >
+                            <img class="img-fluid" src="{{url('assets/img/package-3.jpg')}}" alt="" >
                         </div>
                         <div class="d-flex border-bottom">
                             <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Azad Kashmir</small>
@@ -515,7 +515,7 @@
                 
                 
                 <div class="testimonial-item bg-white text-center border p-4">
-                    <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="img/testimonial-4.jpg" style="width: 80px; height: 80px;">
+                    <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="{{url('assets/img/testimonial-4.jpg')}}" style="width: 80px; height: 80px;">
                     <h5 class="mb-0">John Doe</h5>
                     <p>New York, USA</p>
                     <p class="mt-2 mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>

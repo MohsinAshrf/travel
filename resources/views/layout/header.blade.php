@@ -11,7 +11,7 @@
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="{{asset('img/img.png')}}" rel="icon" style="border-radius: 100%; ">
+    <link href="{{url('assets/img/img.png')}}" rel="icon" style="border-radius: 100%; ">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,15 +23,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
-    <link href="{{asset('lib/animate/animate.min.css')}}" rel="stylesheet">
-    <link href="{{asset('lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
-    <link href="{{asset('lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css')}}" rel="stylesheet" />
+    <link href="{{url('assets/lib/animate/animate.min.css')}}" rel="stylesheet">
+    <link href="{{url('assets/lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
+    <link href="{{url('assets/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css')}}" rel="stylesheet" />
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{url('assets/css/bootstrap.min.css')}}" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="{{asset('css/style.css')}}" rel="stylesheet">
+    <link href="{{url('assets/css/style.css')}}" rel="stylesheet">
 </head>
 
 <body>
@@ -45,7 +45,7 @@
        <!-- whatsapp start -->
        <div class="whatsapp">
         <a class="" target="blank" href=" https://wa.me/923008840170"><img  style="height:50px;width:50p
-        x;border-radius:25%" src="{{asset('img/whatsapp.webp')}}" alt="imgae"></a>
+        x;border-radius:25%" src="{{url('assets/img/whatsapp.webp')}}" alt="imgae"></a>
 
     </div>
     <!-- whatsapp end  -->
@@ -74,7 +74,7 @@
         <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
             <a href="{{ route('index') }}" class="navbar-brand  p-0 d-flex align-items-center">
                 <div>
-                    <img src="{{asset('img/pns.jpg')}}" alt="Logo"class="rounded-circle" > 
+                    <img src="{{url('assets/img/pns.jpg')}}" alt="Logo"class="rounded-circle" > 
 
                 </div>
                 <h4 class="text-primary m-0 ms-2">PeaksnSlopeGallery</h4>

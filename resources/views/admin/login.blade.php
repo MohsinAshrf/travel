@@ -41,7 +41,7 @@
     <div class="login-container">
         <div class="login-box text-center">
             <!-- Logo -->
-            <img class="rounded-circle" src="{{ asset('img/a.jpg') }}" alt="Logo">
+            <img class="rounded-circle" src="{{ url('assets/img/a.jpg') }}" alt="Logo">
             <form action="{{ route('login') }}" method="POST">
                 @csrf
 

@@ -31,7 +31,7 @@
              <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                  <div class="package-item">
                      <div class="overflow-hidden">
-                         <img class="img-fluid" src="{{ asset('storage/'.$item->image) }}" alt="" style="width:350px;height:232px">
+                         <img class="img-fluid" src="{{ $item->image }}" alt="" style="width:350px;height:232px">
                      </div>
                      <div class="d-flex border-bottom">
                          <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>{{ Str::title($item->location) }}</small>
